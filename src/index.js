@@ -1,11 +1,13 @@
 const qs = require('query-string')
+import * as type from "./type"
+import * as utils from "./utils"
 
-export function hi () {
-  return 'hello uty'
+export function getQuery(url) {
+	return qs.parse(url)
 }
 
-export function getQuery (url) {
-  return qs.parse(url)
+export default {
+	type,
+	utils
 }
 
-console.log(getQuery())
