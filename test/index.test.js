@@ -34,9 +34,9 @@ test('uty.common.npm', () => {
 })
 
 test('uty.node', () => {
-  const { isWindows } = uty.node
+  const { isWin } = uty.node
 
-  expect(isWindows()).toBeFalsy()
+  expect(isWin()).toBeFalsy()
 })
 
 test('uty.web', () => {
