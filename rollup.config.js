@@ -37,6 +37,7 @@ export default [
   // `file` and `format` for each target)
   {
     input: 'src/index.js',
+    external: ['dayjs', 'query-string'],
     output: [
       { file: pkg.main, format: 'cjs' },
       { file: pkg.module, format: 'es' }

@@ -22,7 +22,8 @@
     "dev": "rollup -c -w",
     "pretest": "npm run build",
     "test": "jest",
-    "ci": "npm run test",
+    "lint": "eslint . --fix",
+    "ci": "npm run lint && npm run test",
     "commit": "git add . && git cz",
     "semantic-release": "semantic-release"
   },
