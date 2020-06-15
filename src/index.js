@@ -1,13 +1,14 @@
-const qs = require('query-string')
-import * as type from "./type"
-import * as utils from "./utils"
+import * as common from "./common"
+import * as node from "./node"
+import * as web from "./web"
 
-export function getQuery(url) {
-	return qs.parse(url)
-}
+import * as type from "./type"
+
 
 export default {
 	type,
-	utils
+	common,
+	node,
+	web
 }
 
